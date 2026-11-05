@@ -15,5 +15,26 @@ RQ2: Does per-CWE coverage shift across generators, and if so, which tools and w
 RQ3: Does the complementarity of tools hold across all generators
 
 # Method
+Score, scoring, and corpus are inherited from Liu et al. so that results are directly comparable to the published figures.
+
+- **Weakness classes (6, from the 2024 CWE Top 25):** CWE-77 command injection, CWE-502 unsafe deserialization, CWE-94 code injection, CWE-79 cross-site scripting, CWE-22 path traversal, CWE-89 SQL injection
+- **Scoring rule:** method-level. An alert matching the ground-truth type and location in the vulnerable version is a true positive; any report on the patched version is a false positive; silence on the vulnerable version is a false negative
+-  **Tools:** free and no cost only, at default configuration, versions pinned
+-  **Generation protocol:** One prompt set issued verbatim across models, temperature fixed, one generation per prompt per model, model versions, and dates logged, refusals recorded rather than re-prompted (following Tony et al., TOSEM 2025)
+
+# Repo layout
+Pending
+
+# Reproducting
+The upstream benchmark is located at
+```bash
+git clone https://github.com/Victor725/PySASTBench.git
+```
+
+The real-world dataset is distributed separately at
+<https://zenodo.org/records/17936545>.
+
+Pending
+
 
 
