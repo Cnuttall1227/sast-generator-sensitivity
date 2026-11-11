@@ -36,5 +36,40 @@ The real-world dataset is distributed separately at
 
 Pending
 
+## Key references
 
+Liu, Z., Wang, Z., Liu, H., & Li, W. (2026). An empirical study on static application
+security testing (SAST) tools for Python. *ICSE '26*.
+[doi:10.1145/3744916.3773110](https://doi.org/10.1145/3744916.3773110)
+
+Tony, C., Díaz Ferreyra, N. E., Mutas, M., Dhif, S., & Scandariato, R. (2025).
+Prompting techniques for secure code generation: A systematic investigation.
+*ACM TOSEM*, 34(8), Article 225.
+[doi:10.1145/3722108](https://doi.org/10.1145/3722108)
+
+Lipp, S., Banescu, S., & Pretschner, A. (2022). An empirical study on the effectiveness
+of static C code analyzers for vulnerability detection. *ISSTA '22*, 544–555.
+[doi:10.1145/3533767.3534380](https://doi.org/10.1145/3533767.3534380)
+
+Charoenwet, W., Thongtanunam, P., Pham, V.-T., & Treude, C. (2024). An empirical study
+of static analysis tools for secure code review. *ISSTA '24*, 691–703.
+[doi:10.1145/3650212.3680313](https://doi.org/10.1145/3650212.3680313)
+
+Bennett, G., Hall, T., Winter, E., & Counsell, S. (2024). Semgrep*: Improving the
+limited performance of static application security testing (SAST) tools. *EASE 2024*,
+614–623. [doi:10.1145/3661167.3661262](https://doi.org/10.1145/3661167.3661262)
+
+Tudela, F. M., Bermejo Higuera, J.-R., Bermejo Higuera, J., Sicilia Montalvo, J.-A., &
+Argyros, M. I. (2020). On combining static, dynamic and interactive analysis security
+testing tools to improve OWASP Top Ten security vulnerability detection in web
+applications. *Applied Sciences*, 10(24), 9119.
+[doi:10.3390/app10249119](https://doi.org/10.3390/app10249119)
+
+---
+
+## Acknowledgements
+
+This work builds directly on the PySASTBench benchmark released by Liu, Wang, Liu and
+Li alongside their ICSE '26 paper. The benchmark, its ground truth annotations, its
+CWE mappings and its evaluation scripts are their contribution, not ours.
 
