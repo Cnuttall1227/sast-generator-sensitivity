@@ -1,0 +1,74 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-12T02:22:59Z",
+  "metrics": {
+    "/target/77_CO-8_vul.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 2,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 104,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 2,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 104,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "59         remote_command = f\"grep -i -m {limit} \\\"{pattern}\\\" {log_path}\"\n60         _, stdout, stderr = client.exec_command(remote_command, timeout=SSH_TIMEOUT)\n61         lines = stdout.read().decode(errors=\"replace\").splitlines()\n",
+      "col_offset": 28,
+      "end_col_offset": 84,
+      "filename": "/target/77_CO-8_vul.py",
+      "issue_confidence": "MEDIUM",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Possible shell injection via Paramiko call, check inputs are properly sanitized.",
+      "line_number": 60,
+      "line_range": [
+        60
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b601_paramiko_calls.html",
+      "test_id": "B601",
+      "test_name": "paramiko_calls"
+    },
+    {
+      "code": "124 if __name__ == \"__main__\":\n125     app.run(host=\"0.0.0.0\", port=int(os.environ.get(\"PORT\", \"5050\")))\n",
+      "col_offset": 17,
+      "end_col_offset": 26,
+      "filename": "/target/77_CO-8_vul.py",
+      "issue_confidence": "MEDIUM",
+      "issue_cwe": {
+        "id": 605,
+        "link": "https://cwe.mitre.org/data/definitions/605.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Possible binding to all interfaces.",
+      "line_number": 125,
+      "line_range": [
+        125
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b104_hardcoded_bind_all_interfaces.html",
+      "test_id": "B104",
+      "test_name": "hardcoded_bind_all_interfaces"
+    }
+  ]
+}

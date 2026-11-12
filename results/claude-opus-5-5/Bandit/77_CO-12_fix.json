@@ -1,0 +1,80 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-12T02:21:09Z",
+  "metrics": {
+    "/target/77_CO-12_fix.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 2,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 102,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 2,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 102,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "50     log.info(\"Switching %s to network %s\", WIFI_INTERFACE, ssid)\n51     exit_code = os.spawnlp(\n52         os.P_WAIT,\n53         \"nmcli\", \"nmcli\",\n54         \"device\", \"wifi\", \"connect\", ssid,\n55         \"password\", passphrase,\n56         \"ifname\", WIFI_INTERFACE,\n57     )\n58     return {\"ok\": exit_code == 0, \"exit_code\": exit_code}\n",
+      "col_offset": 16,
+      "end_col_offset": 5,
+      "filename": "/target/77_CO-12_fix.py",
+      "issue_confidence": "MEDIUM",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process without a shell.",
+      "line_number": 51,
+      "line_range": [
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b606_start_process_with_no_shell.html",
+      "test_id": "B606",
+      "test_name": "start_process_with_no_shell"
+    },
+    {
+      "code": "63         raise ValueError(\"volume must be 0-100\")\n64     exit_code = os.spawnlp(os.P_WAIT, \"amixer\", \"amixer\", \"-q\", \"sset\", \"Master\", f\"{level}%\")\n65     return {\"ok\": exit_code == 0, \"volume\": level}\n",
+      "col_offset": 16,
+      "end_col_offset": 94,
+      "filename": "/target/77_CO-12_fix.py",
+      "issue_confidence": "MEDIUM",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process without a shell.",
+      "line_number": 64,
+      "line_range": [
+        64
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b606_start_process_with_no_shell.html",
+      "test_id": "B606",
+      "test_name": "start_process_with_no_shell"
+    }
+  ]
+}

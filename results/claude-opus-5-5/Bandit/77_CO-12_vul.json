@@ -1,0 +1,74 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-12T02:21:13Z",
+  "metrics": {
+    "/target/77_CO-12_vul.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 2,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 96,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 2,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 2,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 96,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "48     log.info(\"Switching %s to network %s\", WIFI_INTERFACE, ssid)\n49     exit_code = os.spawnlp(os.P_WAIT, \"sh\", \"sh\", \"-c\", command)\n50     return {\"ok\": exit_code == 0, \"exit_code\": exit_code}\n",
+      "col_offset": 16,
+      "end_col_offset": 64,
+      "filename": "/target/77_CO-12_vul.py",
+      "issue_confidence": "MEDIUM",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process without a shell.",
+      "line_number": 49,
+      "line_range": [
+        49
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b606_start_process_with_no_shell.html",
+      "test_id": "B606",
+      "test_name": "start_process_with_no_shell"
+    },
+    {
+      "code": "56         raise ValueError(\"volume must be 0-100\")\n57     exit_code = os.spawnlp(os.P_WAIT, \"amixer\", \"amixer\", \"-q\", \"sset\", \"Master\", f\"{level}%\")\n58     return {\"ok\": exit_code == 0, \"volume\": level}\n",
+      "col_offset": 16,
+      "end_col_offset": 94,
+      "filename": "/target/77_CO-12_vul.py",
+      "issue_confidence": "MEDIUM",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process without a shell.",
+      "line_number": 57,
+      "line_range": [
+        57
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b606_start_process_with_no_shell.html",
+      "test_id": "B606",
+      "test_name": "start_process_with_no_shell"
+    }
+  ]
+}
