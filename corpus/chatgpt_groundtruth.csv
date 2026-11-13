@@ -1,2 +1,10 @@
 TestCase,CWE Type,Vul Position
 22_GPT-1,22,read_transcript
+22_GPT-2,22,preview_journal
+22_GPT-3,22,export_playlist
+22_GPT-4,22,do_report
+22_GPT-5,22,read_pattern
+22_GPT-6,22,read_care_sheet
+22_GPT-7,22,RecipeCardHandler
+22_GPT-8,22,preview_manual
+22_GPT-9,22,guide
