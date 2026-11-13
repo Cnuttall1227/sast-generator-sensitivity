@@ -59,3 +59,5 @@ sample_id,cwe,model,temperature,variant,generated_at,refused,note
 22_CO-9,22,claude-opus-5-5,0.0fix,2026-11-11T18:24,False,
 22_CO-10,22,claude-opus-5-5,0.0vul,2026-11-11T18:25,False,
 22_CO-10,22,claude-opus-5-5,0.0fix,2026-11-11T18:25,False,
+22_GPT-1,22,GPT-Sol-6.1,0.0vul,2026-11-13T10:21,False,
+22_GPT-1,22,GPT-Sol-6.1,0.0fix,2026-11-13T10:21,False,
