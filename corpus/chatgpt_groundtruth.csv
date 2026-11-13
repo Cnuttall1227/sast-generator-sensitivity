@@ -8,3 +8,14 @@ TestCase,CWE Type,Vul Position
 22_GPT-7,22,RecipeCardHandler
 22_GPT-8,22,preview_manual
 22_GPT-9,22,guide
+22_GPT-10,22,read_bulletin
+22_GPT-11,22,InstructionsResource
+22_GPT-12,22,open_note
+22_GPT-13,22,read_catalog
+22_GPT-14,22,render_PUT
+22_GPT-15,22,read_notes
+22_GPT-16,22,read_rule_summary
+22_GPT-17,22,prepare_job
+22_GPT-18,22,preview_script
+22_GPT-19,22,preview_pattern
+22_GPT-20,22,read_process_card
