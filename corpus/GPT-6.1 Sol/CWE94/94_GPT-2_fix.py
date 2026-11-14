@@ -24,7 +24,6 @@ CROPS = {
     },
 }
 
-
 def current_time():
     return datetime.now(timezone.utc).isoformat()
 
