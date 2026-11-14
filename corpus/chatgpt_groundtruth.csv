@@ -29,4 +29,23 @@ TestCase,CWE Type,Vul Position
 77_GPT-8,77,inspect_audio_device
 77_GPT-9,77,inspect_display_output
 77_GPT-10,77,inspect_network_interface
+77_GPT-11,77,inspect_sensor_service
+77_GPT-12,77,inspect_player_version
+77_GPT-13,77,inspect_storage_volume
+77_GPT-14,77,inspect_usb_device
+77_GPT-15,77,check_pronunciation
+77_GPT-16,77,inspect_timezone
+77_GPT-17,77,inspect_radio_hostname
+77_GPT-18,77,inspect_color_profile
+77_GPT-19,77,inspect_workstation_account
+77_GPT-20,77,inspect_dictionary
+
+
+
+
+
+
+
+
+
 
