@@ -199,15 +199,26 @@ sample_id,cwe,model,temperature,variant,generated_at,refused,note
 79_GPT-9,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:10,False,
 79_GPT-10,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:16,False,
 79_GPT-10,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:16,False,
-
-
-
-
-
-
-
-
-
+79_GPT-11,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:26,False,
+79_GPT-11,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:26,False,
+79_GPT-12,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:32,False,
+79_GPT-12,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:32,False,
+79_GPT-13,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:41,False,
+79_GPT-13,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:41,False,
+79_GPT-14,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:44,False,
+79_GPT-14,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:44,False,
+79_GPT-15,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:47,False,
+79_GPT-15,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:47,False,
+79_GPT-16,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:50,False,
+79_GPT-16,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:50,False,
+79_GPT-17,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:53,False,
+79_GPT-17,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:53,False,
+79_GPT-18,79,GPT-Sol-6.1,0.0vul,2026-11-14T1:57,False,
+79_GPT-18,79,GPT-Sol-6.1,0.0fix,2026-11-14T1:57,False,
+79_GPT-19,79,GPT-Sol-6.1,0.0vul,2026-11-14T2:02,False,
+79_GPT-19,79,GPT-Sol-6.1,0.0fix,2026-11-14T2:02,False,
+79_GPT-20,79,GPT-Sol-6.1,0.0vul,2026-11-14T2:08,False,
+79_GPT-20,79,GPT-Sol-6.1,0.0fix,2026-11-14T2:08,False,
 
 
 
