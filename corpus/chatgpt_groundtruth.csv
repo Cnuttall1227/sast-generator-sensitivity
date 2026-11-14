@@ -59,6 +59,17 @@ TestCase,CWE Type,Vul Position
 502_GPT-18,502,import_planting_token
 502_GPT-19,502,restore_cooking_plan
 502_GPT-20,502,import_reservation_blob
+79_GPT-1,79,preview_welcome
+79_GPT-2,79,search_books
+79_GPT-3,79,BadgeHandler
+79_GPT-4,79,on_get
+79_GPT-5,79,preview_label
+79_GPT-6,79,greeting
+79_GPT-7,79,preview_notebook
+79_GPT-8,79,preview_table_sign
+79_GPT-9,79,preview_note
+79_GPT-10,79,preview_message
+
 
 
 
