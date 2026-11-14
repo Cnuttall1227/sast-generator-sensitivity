@@ -69,14 +69,16 @@ TestCase,CWE Type,Vul Position
 79_GPT-8,79,preview_table_sign
 79_GPT-9,79,preview_note
 79_GPT-10,79,preview_message
-
-
-
-
-
-
-
-
+79_GPT-11,79,preview_dedication
+79_GPT-12,79,show_certificate
+79_GPT-13,79,preview_announcement
+79_GPT-14,79,preview_poster
+79_GPT-15,79,claim_card
+79_GPT-16,79,preview_placard
+79_GPT-17,79,render_GET
+79_GPT-18,79,preview_briefing
+79_GPT-19,79,preview_feedback
+79_GPT-20,79,preview_bookmark
 
 
 
