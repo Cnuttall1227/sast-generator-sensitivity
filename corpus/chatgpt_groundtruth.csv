@@ -19,3 +19,14 @@ TestCase,CWE Type,Vul Position
 22_GPT-18,22,preview_script
 22_GPT-19,22,preview_pattern
 22_GPT-20,22,read_process_card
+77_GPT-1,77,check_display_host
+77_GPT-2,77,inspect_printer
+77_GPT-3,77,lookup_supplier_domain
+77_GPT-4,77,inspect_audio_source
+77_GPT-5,77,inspect_time_server
+77_GPT-6,77,inspect_scan
+77_GPT-7,77,inspect_caption_font
+77_GPT-8,77,inspect_audio_device
+77_GPT-9,77,inspect_display_output
+77_GPT-10,77,inspect_network_interface
+
