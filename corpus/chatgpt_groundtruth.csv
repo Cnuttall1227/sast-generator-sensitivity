@@ -79,6 +79,24 @@ TestCase,CWE Type,Vul Position
 79_GPT-18,79,preview_briefing
 79_GPT-19,79,preview_feedback
 79_GPT-20,79,preview_bookmark
+94_GPT-1,94,calculate_project_estimate
+94_GPT-2,94,estimate_harvest
+94_GPT-3,94,apply_attendance_rule
+94_GPT-4,94,rank_delivery_options
+94_GPT-5,94,calculate_group_discount
+94_GPT-6,94,prepare_feeding_schedule
+94_GPT-7,94,calculate_machine_charge
+94_GPT-8,94,calibrate_reading
+94_GPT-9,94,calculate_round_score
+94_GPT-10,94,price_stall_order
+
+
+
+
+
+
+
+
 
 
 
