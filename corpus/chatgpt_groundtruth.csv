@@ -49,6 +49,17 @@ TestCase,CWE Type,Vul Position
 502_GPT-8,502,import_observation_document
 502_GPT-9,502,restore_tour_state
 502_GPT-10,502,import_assessment_packet
+502_GPT-11,502,restore_studio_pass
+502_GPT-12,502,import_exposure_sequence
+502_GPT-13,502,import_repair_ticket
+502_GPT-14,502,import_activity_bundle
+502_GPT-15,502,import_shift_message
+502_GPT-16,502,import_ride_manifest
+502_GPT-17,502,import_excursion_plan
+502_GPT-18,502,import_planting_token
+502_GPT-19,502,restore_cooking_plan
+502_GPT-20,502,import_reservation_blob
+
 
 
 
