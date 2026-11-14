@@ -89,16 +89,16 @@ TestCase,CWE Type,Vul Position
 94_GPT-8,94,calibrate_reading
 94_GPT-9,94,calculate_round_score
 94_GPT-10,94,price_stall_order
-
-
-
-
-
-
-
-
-
-
+94_GPT-11,94,calculate_energy_projection
+94_GPT-12,94,estimate_walk_duration
+94_GPT-13,94,estimate_ventilation
+94_GPT-14,94,calculate_event_budget
+94_GPT-15,94,calculate_practice_load
+94_GPT-16,94,estimate_ink_usage
+94_GPT-17,94,calculate_seed_allocation
+94_GPT-18,94,estimate_volunteer_effort
+94_GPT-19,94,calculate_rental_quote
+94_GPT-20,94,estimate_water_usage
 
 
 
