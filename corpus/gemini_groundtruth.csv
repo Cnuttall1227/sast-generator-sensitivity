@@ -1,1 +1,2 @@
 TestCase,CWE Type,Vul Position
+89_GH-1,89,query_carrier_audit_logs
