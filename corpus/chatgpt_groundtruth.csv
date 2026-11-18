@@ -9,7 +9,7 @@ TestCase,CWE Type,Vul Position
 22_GPT-8,22,preview_manual
 22_GPT-9,22,SeedLibrary.guide
 22_GPT-10,22,read_bulletin
-22_GPT-11,22,InstructionsResource
+22_GPT-11,22,InstructionsResource.on_get
 22_GPT-12,22,TrailPlanner.open_note
 22_GPT-13,22,read_catalog
 22_GPT-14,22,ChecklistResource.render_PUT
