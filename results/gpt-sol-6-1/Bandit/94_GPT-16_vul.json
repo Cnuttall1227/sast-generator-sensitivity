@@ -1,0 +1,62 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-20T01:37:00Z",
+  "metrics": {
+    "/target/94_GPT-16_vul.py": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 113,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 1,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 113,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "80         # CWE-94: a formula stored in an imported SQLite row becomes Python code.\n81         ink_ml = eval(\n82             order[\"ink_formula\"],\n83             {\"__builtins__\": __builtins__},\n84             {\n85                 \"copies\": order[\"copies\"],\n86                 \"ink_per_copy\": job[\"ink_ml_per_copy\"],\n87                 \"sheets_per_copy\": job[\"paper_sheets_per_copy\"],\n88             },\n89         )\n90     except Exception:\n",
+      "col_offset": 17,
+      "end_col_offset": 9,
+      "filename": "/target/94_GPT-16_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of possibly insecure function - consider using safer ast.literal_eval.",
+      "line_number": 81,
+      "line_range": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b307-eval",
+      "test_id": "B307",
+      "test_name": "blacklist"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-20T01:28:59Z",
+  "metrics": {
+    "/target/502_GPT-4_vul.py": {
+      "CONFIDENCE.HIGH": 4,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 2,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 108,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 4,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 2,
+      "SEVERITY.LOW": 1,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 108,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "1 import json\n2 import pickle\n3 from datetime import datetime, timezone\n",
+      "col_offset": 0,
+      "end_col_offset": 13,
+      "filename": "/target/502_GPT-4_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 502,
+        "link": "https://cwe.mitre.org/data/definitions/502.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with pickle module.",
+      "line_number": 2,
+      "line_range": [
+        2
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_imports.html#b403-import-pickle",
+      "test_id": "B403",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "3 from datetime import datetime, timezone\n4 from xmlrpc.client import Binary\n5 from xmlrpc.server import SimpleXMLRPCServer\n",
+      "col_offset": 0,
+      "end_col_offset": 32,
+      "filename": "/target/502_GPT-4_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 20,
+        "link": "https://cwe.mitre.org/data/definitions/20.html"
+      },
+      "issue_severity": "HIGH",
+      "issue_text": "Using Binary to parse untrusted XML data is known to be vulnerable to XML attacks. Use defusedxml.xmlrpc.monkey_patch() function to monkey-patch xmlrpclib and mitigate XML vulnerabilities.",
+      "line_number": 4,
+      "line_range": [
+        4
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_imports.html#b411-import-xmlrpclib",
+      "test_id": "B411",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "4 from xmlrpc.client import Binary\n5 from xmlrpc.server import SimpleXMLRPCServer\n6 \n",
+      "col_offset": 0,
+      "end_col_offset": 44,
+      "filename": "/target/502_GPT-4_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 20,
+        "link": "https://cwe.mitre.org/data/definitions/20.html"
+      },
+      "issue_severity": "HIGH",
+      "issue_text": "Using SimpleXMLRPCServer to parse untrusted XML data is known to be vulnerable to XML attacks. Use defusedxml.xmlrpc.monkey_patch() function to monkey-patch xmlrpclib and mitigate XML vulnerabilities.",
+      "line_number": 5,
+      "line_range": [
+        5
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_imports.html#b411-import-xmlrpclib",
+      "test_id": "B411",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "41         # CWE-502: XML-RPC binary content is deserialized as untrusted pickle.\n42         booking = pickle.loads(data)\n43     except Exception:\n",
+      "col_offset": 18,
+      "end_col_offset": 36,
+      "filename": "/target/502_GPT-4_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 502,
+        "link": "https://cwe.mitre.org/data/definitions/502.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue.",
+      "line_number": 42,
+      "line_range": [
+        42
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b301-pickle",
+      "test_id": "B301",
+      "test_name": "blacklist"
+    }
+  ]
+}
