@@ -1,0 +1,2 @@
+/target/94_GPT-3_vul.py:74:25: DUO110 use of "compile" is insecure
+/target/94_GPT-3_vul.py:75:9: DUO105 use of "exec" is insecure

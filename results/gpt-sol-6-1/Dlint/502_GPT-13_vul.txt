@@ -1,0 +1,1 @@
+/target/502_GPT-13_vul.py:51:18: DUO109 insecure use of "yaml" parsing function, prefer "safe_*" equivalent

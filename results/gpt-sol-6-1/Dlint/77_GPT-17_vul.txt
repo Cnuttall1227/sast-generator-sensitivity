@@ -1,0 +1,1 @@
+/target/77_GPT-17_vul.py:43:18: DUO116 use of "shell=True" is insecure in "subprocess" module

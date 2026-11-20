@@ -1,0 +1,1 @@
+/target/502_GPT-20_vul.py:71:23: DUO103 insecure use of "pickle" or "cPickle"
