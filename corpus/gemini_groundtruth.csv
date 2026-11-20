@@ -1,1 +1,21 @@
 TestCase,CWE Type,Vul Position
+89_GP-1,89,search_items_vulnerable
+89_GP-2,89,login
+89_GP-3,89,search_employees_by_department
+89_GP-4,89,generate_device_report
+89_GP-5,89,search_contacts_by_company
+89_GP-6,89,search_by_author
+89_GP-7,89,get_category_risk_profile
+89_GP-8,89,retrieve_room_history
+89_GP-9,89,fetch_player_profile
+89_GP-10,89,verify_merchant_authorization
+89_GP-11,89,get_products_by_category
+89_GP-12,89,fetch_payroll_data
+89_GP-13,89,search_assets_by_os
+89_GP-14,89,check_sensor_status
+89_GP-15,89,execute_search
+89_GP-16,89,fetch_region_tax_rate
+89_GP-17,89,fetch_wallet_balance
+89_GP-18,89,fetch_session_details
+89_GP-19,89,check_order_status
+89_GP-20,89,execute_gdpr_export
