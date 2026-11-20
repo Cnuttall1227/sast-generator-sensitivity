@@ -73,7 +73,7 @@ def add_item(item: Item):
     return {"message": "Item added successfully", "id": item_id}
 
 @app.get("/items/search/")
-def search_items_secure(name: str):
+def search_items_vulnerable(name: str):
     conn = sqlite3.connect(DB_FILE)
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
