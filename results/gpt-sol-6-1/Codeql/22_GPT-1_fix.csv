@@ -1,0 +1,2 @@
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_GPT-1_fix.py:4:52:4:58""]].","/22_GPT-1_fix.py","125","28","125","55"
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_GPT-1_fix.py:4:52:4:58""]].","/22_GPT-1_fix.py","130","19","130","33"

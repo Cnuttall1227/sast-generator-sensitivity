@@ -1,0 +1,1 @@
+"Deserialization of user-controlled data","Deserializing user-controlled data may allow attackers to execute arbitrary code.","error","Unsafe deserialization depends on a [[""user-provided value""|""relative:///502_GPT-3_vul.py:6:35:6:41""]].","/502_GPT-3_vul.py","46","35","46","53"

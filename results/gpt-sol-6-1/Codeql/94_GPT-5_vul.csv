@@ -1,0 +1,1 @@
+"Code injection","Interpreting unsanitized user input as code allows a malicious user to perform arbitrary code execution.","error","This code execution depends on a [[""user-provided value""|""relative:///94_GPT-5_vul.py:4:35:4:41""]].","/94_GPT-5_vul.py","53","13","53","19"

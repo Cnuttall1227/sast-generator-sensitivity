@@ -1,0 +1,7 @@
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///94_GPT-7_vul.py:30:30:30:39""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_GPT-7_vul.py:31:23:31:32""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_GPT-7_vul.py:107:21:107:30""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_GPT-7_vul.py:113:43:113:52""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_GPT-7_vul.py:31:43:31:52""]] validation.","/94_GPT-7_vul.py","31","43","31","52"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///94_GPT-7_vul.py:7:1:7:8""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_GPT-7_vul.py:31:61:31:68""]] validation.","/94_GPT-7_vul.py","31","61","31","68"

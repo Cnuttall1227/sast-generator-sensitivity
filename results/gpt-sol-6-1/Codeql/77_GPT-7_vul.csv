@@ -1,0 +1,1 @@
+"Uncontrolled command line","Using externally controlled strings in a command line may allow a malicious user to change the meaning of the command.","error","This command line depends on a [[""user-provided value""|""relative:///77_GPT-7_vul.py:119:5:119:13""]].","/77_GPT-7_vul.py","53","13","53","19"

@@ -1,0 +1,1 @@
+"SimpleXMLRPCServer denial of service","SimpleXMLRPCServer is vulnerable to denial of service attacks from untrusted user input","warning","SimpleXMLRPCServer is vulnerable to XML bombs.","/94_GPT-3_vul.py","122","10","126","5"

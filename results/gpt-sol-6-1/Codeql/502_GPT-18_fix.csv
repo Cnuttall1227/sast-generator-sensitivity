@@ -1,0 +1,7 @@
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///502_GPT-18_fix.py:34:27:34:31""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_GPT-18_fix.py:35:23:35:27""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_GPT-18_fix.py:35:42:35:46""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_GPT-18_fix.py:38:12:38:16""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_GPT-18_fix.py:43:13:43:17""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_GPT-18_fix.py:149:9:149:13""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_GPT-18_fix.py:150:40:150:44""]] validation.","/502_GPT-18_fix.py","63","39","63","44"

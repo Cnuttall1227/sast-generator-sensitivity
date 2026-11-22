@@ -1,0 +1,2 @@
+"Failure to use secure cookies","Insecure cookies may be sent in cleartext, which makes them vulnerable to interception.","warning","Cookie is added without the Secure attribute properly set.","/79_GPT-3_vul.py","97","9","102","9"
+"Construction of a cookie using user-supplied input","Constructing cookies from user input may allow an attacker to perform a Cookie Poisoning attack.","warning","Cookie is constructed from a [[""user-supplied input""|""relative:///79_GPT-3_vul.py:86:14:86:17""]].","/79_GPT-3_vul.py","99","13","99","20"
