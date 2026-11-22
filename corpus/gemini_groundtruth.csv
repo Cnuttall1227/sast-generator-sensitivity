@@ -59,8 +59,26 @@ TestCase,CWE Type,Vul Position
 502_GP-18,502,process_incoming_stream
 502_GP-19,502,parse_iac_manifest
 502_GP-20,502,decode_preference_cookie
-
-
+94_GP-1,94,evaluate_discount_rule
+94_GP-2,94,execute_custom_build_step
+94_GP-3,94,execute_dynamic_filter
+94_GP-4,94,apply_calibration
+94_GP-5,94,execute_map_reduce_job
+94_GP-6,94,generate_regional_payroll
+94_GP-7,94,execute_custom_transformation
+94_GP-8,94,calculate_data_points
+94_GP-9,94,execute_advanced_macro
+94_GP-10,94,apply_custom_pandas_transform
+94_GP-11,94,calculate_predictive_maintenance_score
+94_GP-12,94,evaluate_routing_condition
+94_GP-13,94,execute_diagnostic_routine
+94_GP-14,94,process_dynamic
+94_GP-15,94,AdvancedRuleHandler
+94_GP-16,94,execute_macro
+94_GP-17,94,test_task_trigger
+94_GP-18,94,execute_custom_transformation
+94_GP-19,94,process_diagnostic_query
+94_GP-20,94,execute_dynamic_aggregation
 
 
 
