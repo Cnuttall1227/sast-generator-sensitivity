@@ -79,6 +79,40 @@ TestCase,CWE Type,Vul Position
 94_GP-18,94,execute_custom_transformation
 94_GP-19,94,process_diagnostic_query
 94_GP-20,94,execute_dynamic_aggregation
+79_GP-1,79,portal_search
+79_GP-2,79,CustomerPortal
+79_GP-3,79,view_portfolio
+79_GP-4,79,traffic_dashboard
+79_GP-5,79,handle_admin_logs
+79_GP-6,79,preview_invoice_html
+79_GP-7,79,dashboard_view
+79_GP-8,79,custom_404_handler
+79_GP-9,79,process_upload
+79_GP-10,79,handle_search
+79_GP-11,79,get
+79_GP-12,79,DiagnosticsResource
+79_GP-13,79,NotFoundErrorHandler
+79_GP-14,79,search_logs
+79_GP-15,79,admin_dashboard
+79_GP-16,79,menu
+79_GP-17,79,category_handler
+79_GP-18,79,preview_application
+79_GP-19,79,search_tickets
+79_GP-20,79,process_upload
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
