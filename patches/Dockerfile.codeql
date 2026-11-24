@@ -1,0 +1,15 @@
+FROM ubuntu:22.04
+
+RUN apt update && \
+    apt install -y wget unzip git python3.10 python3.10-venv
+
+RUN wget -q https://github.com/github/codeql-cli-binaries/releases/download/v2.20.0/codeql-linux64.zip && \
+    unzip -q /codeql-linux64.zip -d /codeql-cli && \
+    rm /codeql-linux64.zip && \
+    ln -s /codeql-cli/codeql/codeql /bin/codeql
+
+RUN git clone --depth 1 --branch codeql-cli/v2.20.0 https://github.com/github/codeql.git
+
+RUN mkdir -p /warmup && echo "x = 1" > /warmup/a.py && codeql database create --threads=0 --ram=6144 -l python -s /warmup -- /warmupdb && codeql database analyze --threads=0 --ram=6144 --format=csv --output=/warmup.csv /warmupdb path:/codeql/python/ql/src/codeql-suites/python-security-experimental.qls && rm -rf /warmup /warmupdb /warmup.csv
+
+

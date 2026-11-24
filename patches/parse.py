@@ -7,13 +7,12 @@ import argparse
 
 # Changed: local path
 Project_Root = "/Users/chacenuttall/Documents/PySASTBench/"
-Experiment_Root = Project_Root + "Synthetic_experiment/"
-Synthetic_dataset_path = Project_Root + "SyntheticDataset/"
+Experiment_Root = "/Users/chacenuttall/Documents/Se3994/results/gpt-sol-6-1/"
+Synthetic_dataset_path = "/Users/chacenuttall/Documents/Se3994/corpus/GPT-Sol-6-1/"
 CWEMapping_Root = Project_Root + "CWEMapping/"
 
-GroundTruthPath = Project_Root + "SyntheticGroundTruth.json"
-# Changed upstream names a dated file that is not in the repo
-Ori_Ground_Truth_path = Project_Root + "SyntheticDataset.csv"
+GroundTruthPath = "/Users/chacenuttall/Documents/Se3994/corpus/gpt_groundtruth.json"
+Ori_Ground_Truth_path = "/Users/chacenuttall/Documents/Se3994/corpus/chatgpt_groundtruth.csv"
 
 
 def getGroundTruth(GroundTruthPath):
