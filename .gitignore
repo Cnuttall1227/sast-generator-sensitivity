@@ -5,3 +5,4 @@ logs/
 .venv/
 SyntheticGroundTruth.json
 corpus/*_groundtruth.json
+*.bak
