@@ -1,0 +1,7 @@
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///79_CO-5_vul.py:82:18:82:24""]].","/79_CO-5_vul.py","98","59","98","62"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///79_CO-5_vul.py:68:12:68:26""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///79_CO-5_vul.py:68:81:68:95""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///79_CO-5_vul.py:12:1:12:15""]] validation.","/79_CO-5_vul.py","68","71","68","97"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///79_CO-5_vul.py:68:12:68:26""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///79_CO-5_vul.py:68:81:68:95""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///79_CO-5_vul.py:12:1:12:15""]] validation.","/79_CO-5_vul.py","68","71","68","97"

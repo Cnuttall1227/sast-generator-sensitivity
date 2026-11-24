@@ -116,3 +116,10 @@ injection.eval-injection;94
 injection.reflected-data-httpresponse;79
 sqli.asyncpg-sqli;89
 security.insecure-deserialization;502
+deserialization.avoid-unsafe-ruamel;502
+best-practice.arbitrary-sleep
+best-practice.open-never-closed
+common-mistakes.string-concat-in-list
+correctness.useless-eqeq
+maintainability.is-function-without-parentheses
+maintainability.return-not-in-function

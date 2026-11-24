@@ -1,0 +1,2 @@
+/target/94_CO-14_fix.py:56:12: DUO110 use of "compile" is insecure
+/target/94_CO-14_fix.py:59:16: DUO104 use of "eval" is insecure

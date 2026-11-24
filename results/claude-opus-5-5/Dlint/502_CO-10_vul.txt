@@ -1,0 +1,1 @@
+/target/502_CO-10_vul.py:53:15: DUO103 insecure use of "pickle" or "cPickle"

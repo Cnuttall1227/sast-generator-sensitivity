@@ -1,0 +1,1 @@
+/target/502_CO-2_vul.py:26:12: DUO109 insecure use of "yaml" parsing function, prefer "safe_*" equivalent

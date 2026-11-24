@@ -1,0 +1,1 @@
+/target/77_CO-15_fix.py:6:1: DUO107 insecure use of XML modules, prefer "defusedxml"

@@ -1,0 +1,1 @@
+"Deserialization of user-controlled data","Deserializing user-controlled data may allow attackers to execute arbitrary code.","error","Unsafe deserialization depends on a [[""user-provided value""|""relative:///502_CO-1_vul.py:8:50:8:56""]].","/502_CO-1_vul.py","61","29","61","73"

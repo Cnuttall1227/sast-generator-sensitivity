@@ -1,0 +1,2 @@
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///22_CO-18_vul.py:30:51:30:60""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///22_CO-18_vul.py:12:1:12:10""]] validation.","/22_CO-18_vul.py","30","41","30","62"

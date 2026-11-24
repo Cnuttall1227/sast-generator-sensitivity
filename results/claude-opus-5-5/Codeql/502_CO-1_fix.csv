@@ -1,0 +1,1 @@
+"Construction of a cookie using user-supplied input","Constructing cookies from user input may allow an attacker to perform a Cookie Poisoning attack.","warning","Cookie is constructed from a [[""user-supplied input""|""relative:///502_CO-1_fix.py:9:50:9:56""]].","/502_CO-1_fix.py","79","38","79","44"

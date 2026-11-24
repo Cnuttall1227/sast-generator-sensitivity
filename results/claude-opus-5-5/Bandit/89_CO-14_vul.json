@@ -1,0 +1,59 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-22T18:41:16Z",
+  "metrics": {
+    "/target/89_CO-14_vul.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 1,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 78,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 1,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 1,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 78,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "33     query = text(\n34         \"SELECT o.ordered_on, c.name AS customer, c.region, r.full_name AS rep, \"\n35         \"o.order_number, o.total \"\n36         \"FROM orders o JOIN customers c ON c.id = o.customer_id \"\n37         \"JOIN sales_reps r ON r.id = o.rep_id \"\n38         f\"WHERE {' AND '.join(conditions)} \"\n39         \"ORDER BY o.ordered_on DESC LIMIT 5000\"\n40     )\n",
+      "col_offset": 8,
+      "end_col_offset": 47,
+      "filename": "/target/89_CO-14_vul.py",
+      "issue_confidence": "LOW",
+      "issue_cwe": {
+        "id": 89,
+        "link": "https://cwe.mitre.org/data/definitions/89.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Possible SQL injection vector through string-based query construction.",
+      "line_number": 34,
+      "line_range": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html",
+      "test_id": "B608",
+      "test_name": "hardcoded_sql_expressions"
+    }
+  ]
+}

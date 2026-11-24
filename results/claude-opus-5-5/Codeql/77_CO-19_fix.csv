@@ -1,0 +1,1 @@
+"Reflected server-side cross-site scripting","Writing user input directly to a web page allows for a cross-site scripting vulnerability.","error","Cross-site scripting vulnerability due to a [[""user-provided value""|""relative:///77_CO-19_fix.py:113:16:113:22""]].","/77_CO-19_fix.py","118","12","118","46"

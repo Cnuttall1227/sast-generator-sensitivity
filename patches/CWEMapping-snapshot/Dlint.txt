@@ -24,3 +24,4 @@ DUO115 use of "extract|extractall" is insecure;22
 DUO131 "urllib3" warnings disabled, insecure connections possible
 DUO132 "urllib3" certificate verification disabled, insecure connections possible
 DUO117 avoid "dl" module use
+DUO135 enable all "forbid_*" defenses when using "defusedxml" parsing

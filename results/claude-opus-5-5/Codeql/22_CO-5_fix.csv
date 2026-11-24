@@ -1,0 +1,18 @@
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].","/22_CO-5_fix.py","53","64","53","72"
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].","/22_CO-5_fix.py","56","23","56","30"
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].","/22_CO-5_fix.py","56","55","56","62"
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].","/22_CO-5_fix.py","58","15","58","22"
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].","/22_CO-5_fix.py","59","46","59","48"
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:87:19:87:22""]].
+This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_fix.py:108:17:108:20""]].","/22_CO-5_fix.py","59","51","59","55"

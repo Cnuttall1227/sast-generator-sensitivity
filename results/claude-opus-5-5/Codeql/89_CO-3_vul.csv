@@ -1,0 +1,1 @@
+"SQL query built from user-controlled sources","Building a SQL query from user-controlled sources is vulnerable to insertion of malicious SQL code by the user.","error","This SQL query depends on a [[""user-provided value""|""relative:///89_CO-3_vul.py:5:42:5:48""]].","/89_CO-3_vul.py","38","9","41","25"

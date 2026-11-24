@@ -1,0 +1,1 @@
+"Server Side Template Injection","Using user-controlled data to create a template can cause security issues.","error","This Template depends on [[""user-provided value""|""relative:///94_CO-12_vul.py:72:16:72:22""]].","/94_CO-12_vul.py","61","29","61","41"

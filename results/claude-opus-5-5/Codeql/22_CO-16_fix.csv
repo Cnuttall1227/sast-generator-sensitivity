@@ -1,0 +1,2 @@
+"Failure to use secure cookies","Insecure cookies may be sent in cleartext, which makes them vulnerable to interception.","warning","Cookie is added without the Secure attribute properly set.","/22_CO-16_fix.py","106","9","106","93"
+"Construction of a cookie using user-supplied input","Constructing cookies from user input may allow an attacker to perform a Cookie Poisoning attack.","warning","Cookie is constructed from a [[""user-supplied input""|""relative:///22_CO-16_fix.py:102:14:102:17""]].","/22_CO-16_fix.py","106","39","106","43"

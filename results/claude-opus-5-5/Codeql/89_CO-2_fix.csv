@@ -1,0 +1,9 @@
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///89_CO-2_fix.py:103:19:103:25""]].","/89_CO-2_fix.py","122","65","122","73"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///89_CO-2_fix.py:52:17:52:25""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///89_CO-2_fix.py:52:82:52:90""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///89_CO-2_fix.py:10:1:10:9""]] validation.","/89_CO-2_fix.py","52","72","52","92"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///89_CO-2_fix.py:52:17:52:25""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///89_CO-2_fix.py:52:82:52:90""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///89_CO-2_fix.py:10:1:10:9""]] validation.","/89_CO-2_fix.py","52","72","52","92"
+"Initializing SECRET_KEY of Flask application with Constant value","Initializing SECRET_KEY of Flask application with Constant value files can lead to Authentication bypass","error","The SECRET_KEY config variable is assigned by [[""this constant String""|""relative:///89_CO-2_fix.py:14:52:14:74""]].
+The SECRET_KEY config variable is assigned by [[""this constant String""|""relative:///89_CO-2_fix.py:14:16:14:75""]].","/89_CO-2_fix.py","14","16","14","75"

@@ -1,0 +1,4 @@
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///94_CO-17_vul.py:106:16:106:95""]].
+This log entry depends on a [[""user-provided value""|""relative:///94_CO-17_vul.py:106:16:106:95""]].
+This log entry depends on a [[""user-provided value""|""relative:///94_CO-17_vul.py:106:16:106:95""]].
+This log entry depends on a [[""user-provided value""|""relative:///94_CO-17_vul.py:106:16:106:95""]].","/94_CO-17_vul.py","92","39","92","51"

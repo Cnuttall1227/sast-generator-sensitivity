@@ -1,0 +1,1 @@
+/target/77_CO-1_vul.py:67:14: DUO116 use of "shell=True" is insecure in "subprocess" module

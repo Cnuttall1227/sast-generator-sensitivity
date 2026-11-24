@@ -1,0 +1,1 @@
+"SimpleXMLRPCServer denial of service","SimpleXMLRPCServer is vulnerable to denial of service attacks from untrusted user input","warning","SimpleXMLRPCServer is vulnerable to XML bombs.","/94_CO-16_fix.py","103","14","108","5"

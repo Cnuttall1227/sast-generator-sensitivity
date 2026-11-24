@@ -1,0 +1,1 @@
+/target/22_CO-10_vul.py:40:16: DUO135 enable all "forbid_*" defenses when using "defusedxml" parsing

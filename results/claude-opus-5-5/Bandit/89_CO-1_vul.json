@@ -1,0 +1,80 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-22T18:41:56Z",
+  "metrics": {
+    "/target/89_CO-1_vul.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 1,
+      "CONFIDENCE.MEDIUM": 1,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 102,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 1,
+      "CONFIDENCE.MEDIUM": 1,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 2,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 102,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "56     sql = (\n57         \"SELECT o.id, o.order_number, o.status, o.placed_on, o.total, \"\n58         \"COUNT(i.id) AS line_items \"\n59         \"FROM orders o LEFT JOIN order_items i ON i.order_id = o.id \"\n60         f\"WHERE {' AND '.join(conditions)} \"\n61         \"GROUP BY o.id \"\n62         f\"ORDER BY {sort} {direction.upper()} \"\n63         \"LIMIT %s OFFSET %s\"\n64     )\n",
+      "col_offset": 8,
+      "end_col_offset": 28,
+      "filename": "/target/89_CO-1_vul.py",
+      "issue_confidence": "LOW",
+      "issue_cwe": {
+        "id": 89,
+        "link": "https://cwe.mitre.org/data/definitions/89.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Possible SQL injection vector through string-based query construction.",
+      "line_number": 57,
+      "line_range": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b608_hardcoded_sql_expressions.html",
+      "test_id": "B608",
+      "test_name": "hardcoded_sql_expressions"
+    },
+    {
+      "code": "123 if __name__ == \"__main__\":\n124     uvicorn.run(app, host=\"0.0.0.0\", port=int(os.environ.get(\"PORT\", \"8000\")))\n",
+      "col_offset": 26,
+      "end_col_offset": 35,
+      "filename": "/target/89_CO-1_vul.py",
+      "issue_confidence": "MEDIUM",
+      "issue_cwe": {
+        "id": 605,
+        "link": "https://cwe.mitre.org/data/definitions/605.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Possible binding to all interfaces.",
+      "line_number": 124,
+      "line_range": [
+        124
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b104_hardcoded_bind_all_interfaces.html",
+      "test_id": "B104",
+      "test_name": "hardcoded_bind_all_interfaces"
+    }
+  ]
+}

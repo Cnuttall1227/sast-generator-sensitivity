@@ -1,0 +1,2 @@
+"Clear-text storage of sensitive information","Sensitive information stored without encryption or hashing can expose it to an attacker.","error","This expression stores [[""sensitive data (password)""|""relative:///77_CO-10_fix.py:53:16:53:40""]] as clear text.
+This expression stores [[""sensitive data (password)""|""relative:///77_CO-10_fix.py:113:20:113:58""]] as clear text.","/77_CO-10_fix.py","118","32","118","60"

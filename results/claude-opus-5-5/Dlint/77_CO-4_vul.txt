@@ -1,0 +1,2 @@
+/target/77_CO-4_vul.py:11:10: DUO106 insecure use of "os" module
+/target/77_CO-4_vul.py:25:10: DUO106 insecure use of "os" module

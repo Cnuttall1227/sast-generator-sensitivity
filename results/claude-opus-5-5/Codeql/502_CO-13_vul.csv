@@ -1,0 +1,29 @@
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///502_CO-13_vul.py:103:14:103:17""]].","/502_CO-13_vul.py","126","62","126","69"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:49:18:49:22""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:12:50:16""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:25:50:29""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:53:50:57""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:52:26:52:30""]] validation.","/502_CO-13_vul.py","64","50","64","50"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:49:18:49:22""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:12:50:16""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:25:50:29""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:53:50:57""]] validation.","/502_CO-13_vul.py","50","53","50","57"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:49:18:49:22""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:12:50:16""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:25:50:29""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:53:50:57""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:52:26:52:30""]] validation.","/502_CO-13_vul.py","62","33","62","36"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:49:18:49:22""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:12:50:16""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:25:50:29""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:53:50:57""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:52:26:52:30""]] validation.","/502_CO-13_vul.py","64","50","64","50"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:49:18:49:22""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:12:50:16""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:25:50:29""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:53:50:57""]] validation.","/502_CO-13_vul.py","50","53","50","57"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:49:18:49:22""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:12:50:16""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:25:50:29""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:50:53:50:57""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///502_CO-13_vul.py:52:26:52:30""]] validation.","/502_CO-13_vul.py","62","33","62","36"

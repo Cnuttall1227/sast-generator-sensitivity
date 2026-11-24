@@ -1,0 +1,1 @@
+/target/502_CO-18_vul.py:112:12: DUO102 insecure use of "random" module, prefer "random.SystemRandom"

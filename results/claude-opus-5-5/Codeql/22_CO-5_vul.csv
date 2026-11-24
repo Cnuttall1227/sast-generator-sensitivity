@@ -1,0 +1,8 @@
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:70:19:70:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:91:17:91:20""]].","/22_CO-5_vul.py","39","27","39","34"
+"Uncontrolled data used in path expression","Accessing paths influenced by users can allow an attacker to access unexpected resources.","error","This path depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:70:19:70:22""]].
+This path depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:91:17:91:20""]].","/22_CO-5_vul.py","41","15","41","22"
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:70:19:70:22""]].
+This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:91:17:91:20""]].","/22_CO-5_vul.py","42","46","42","48"
+"Log Injection","Building log entries from user-controlled data is vulnerable to insertion of forged log entries by a malicious user.","error","This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:70:19:70:22""]].
+This log entry depends on a [[""user-provided value""|""relative:///22_CO-5_vul.py:91:17:91:20""]].","/22_CO-5_vul.py","42","51","42","55"

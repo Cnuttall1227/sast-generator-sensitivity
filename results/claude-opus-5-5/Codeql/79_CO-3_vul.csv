@@ -1,0 +1,6 @@
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///79_CO-3_vul.py:10:1:10:11""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///79_CO-3_vul.py:108:36:108:46""]] validation.","/79_CO-3_vul.py","108","36","108","46"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///79_CO-3_vul.py:10:1:10:11""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///79_CO-3_vul.py:108:36:108:46""]] validation.","/79_CO-3_vul.py","108","36","108","46"
+"Initializing SECRET_KEY of Flask application with Constant value","Initializing SECRET_KEY of Flask application with Constant value files can lead to Authentication bypass","error","The SECRET_KEY config variable is assigned by [[""this constant String""|""relative:///79_CO-3_vul.py:14:52:14:74""]].
+The SECRET_KEY config variable is assigned by [[""this constant String""|""relative:///79_CO-3_vul.py:14:16:14:75""]].","/79_CO-3_vul.py","14","16","14","75"

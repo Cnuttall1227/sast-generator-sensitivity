@@ -1,0 +1,1 @@
+/target/502_CO-11_fix.py:3:1: DUO119 avoid "shelve" module use

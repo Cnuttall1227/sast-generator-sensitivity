@@ -1,0 +1,94 @@
+{
+  "errors": [],
+  "generated_at": "2026-11-22T18:40:03Z",
+  "metrics": {
+    "/target/79_CO-3_vul.py": {
+      "CONFIDENCE.HIGH": 3,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 3,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 108,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 3,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 3,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 108,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "86     if not rows:\n87         return mark_safe(\"<p>No visits yet.</p>\")\n88     lines = [\"<table><tr><th>Time</th><th>Path</th><th>Browser</th><th>Referrer</th></tr>\"]\n",
+      "col_offset": 15,
+      "end_col_offset": 49,
+      "filename": "/target/79_CO-3_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 79,
+        "link": "https://cwe.mitre.org/data/definitions/79.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 87,
+      "line_range": [
+        87
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b308-mark-safe",
+      "test_id": "B308",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "94     lines.append(\"</table>\")\n95     return mark_safe(\"\".join(lines))\n96 \n",
+      "col_offset": 11,
+      "end_col_offset": 36,
+      "filename": "/target/79_CO-3_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 80,
+        "link": "https://cwe.mitre.org/data/definitions/80.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Potential XSS on mark_safe function.",
+      "line_number": 95,
+      "line_range": [
+        95
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/plugins/b703_django_mark_safe.html",
+      "test_id": "B703",
+      "test_name": "django_mark_safe"
+    },
+    {
+      "code": "94     lines.append(\"</table>\")\n95     return mark_safe(\"\".join(lines))\n96 \n",
+      "col_offset": 11,
+      "end_col_offset": 36,
+      "filename": "/target/79_CO-3_vul.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 79,
+        "link": "https://cwe.mitre.org/data/definitions/79.html"
+      },
+      "issue_severity": "MEDIUM",
+      "issue_text": "Use of mark_safe() may expose cross-site scripting vulnerabilities and should be reviewed.",
+      "line_number": 95,
+      "line_range": [
+        95
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.8.0/blacklists/blacklist_calls.html#b308-mark-safe",
+      "test_id": "B308",
+      "test_name": "blacklist"
+    }
+  ]
+}

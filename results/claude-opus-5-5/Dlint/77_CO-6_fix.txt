@@ -1,0 +1,1 @@
+/target/77_CO-6_fix.py:19:18: DUO138 catastrophic "re" usage - denial-of-service possible

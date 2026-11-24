@@ -1,0 +1,5 @@
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///94_CO-6_vul.py:26:9:26:13""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_CO-6_vul.py:27:30:27:34""]] validation.","/94_CO-6_vul.py","27","30","27","34"
+"Timing attack against secret","Use of a non-constant-time verification routine to check the value of an secret, possibly allowing a timing attack to retrieve sensitive information.","error","Timing attack against [[""client-supplied token""|""relative:///94_CO-6_vul.py:27:16:27:25""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_CO-6_vul.py:11:1:11:10""]] validation.
+Timing attack against [[""client-supplied token""|""relative:///94_CO-6_vul.py:27:43:27:52""]] validation.","/94_CO-6_vul.py","27","43","27","52"
