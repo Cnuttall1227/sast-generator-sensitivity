@@ -57,7 +57,7 @@ patches/
   CWEMapping-snapshot/                    exact mapping files used for all reported results
   Dockerfile.*                            modified tool images (6)
   SASTs_*.py                              modified tool drivers (5)
-  evaluate.py / parse_gpt.py                  GPT-Sol 6.1 arm
+  evaluate_gpt.py / parse_gpt.py                  GPT-Sol 6.1 arm
   evaluate_claude.py / parse_claude.py    Claude Opus 5.5 arm
   evaluate_baseline.py / parse_baseline.py  DeepSeek-V3 baseline arm
 
