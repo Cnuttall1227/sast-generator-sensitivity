@@ -22,19 +22,92 @@ Score, scoring, and corpus are inherited from Liu et al. so that results are dir
 -  **Tools:** free and no cost only, at default configuration, versions pinned
 -  **Generation protocol:** One prompt set issued verbatim across models, temperature fixed, one generation per prompt per model, model versions, and dates logged, refusals recorded rather than re-prompted (following Tony et al., TOSEM 2025)
 
-# Repo layout
-Pending
+### Tools evaluated
 
-# Reproducting
-The upstream benchmark is located at
+| Tool | Version | Detection technique (Liu et al. Table 1) |
+|---|---|---|
+| Bandit | 1.8.0 | pattern matching + heuristic |
+| Bearer | 1.49.0 | pattern matching + heuristic |
+| CodeQL | 2.20.0 | taint analysis |
+| DevSkim | 1.0.59 | pattern matching |
+| Dlint | 0.16.0 | pattern matching |
+| Semgrep | 1.101.0 | pattern matching |
+
+Pysa and Snyk, the other two tools in the upstream study, are excluded. Reasons and
+supporting citations are in `patches/versions.md`.
+
+# Repo layout
+
+```
+corpus/
+  Claude-Opus-5-5/{22,77,79,89,94,502}/   240 .py files (120 vul + 120 fix)
+  GPT-Sol-6-1/{22,77,79,89,94,502}/       240 .py files
+  Gemini-3.1-Pro/{22,77,79,89,94,502}/    218 .py files (incomplete, excluded)
+  claude_groundtruth.csv                  120 rows: TestCase, CWE Type, Vul Position
+  chatgpt_groundtruth.csv                 120 rows
+  gemini_groundtruth.csv                  100 rows (excluded arm)
+
+generation/
+  prompt.md                               generation protocol, verbatim prompts, models
+  manifest.csv                            one row per generation attempt, refusals included
+
+patches/
+  versions.md                             pinned tool versions, environment, reproduction
+  cwemapping-additions.md                 every deviation from upstream CWE mappings
+  CWEMapping-snapshot/                    exact mapping files used for all reported results
+  Dockerfile.*                            modified tool images (6)
+  SASTs_*.py                              modified tool drivers (5)
+  evaluate.py / parse_gpt.py                  GPT-Sol 6.1 arm
+  evaluate_claude.py / parse_claude.py    Claude Opus 5.5 arm
+  evaluate_baseline.py / parse_baseline.py  DeepSeek-V3 baseline arm
+
+results/
+  baseline/                               DeepSeek-V3 scored output
+  gpt-sol-6-1/<Tool>/                     240 raw reports per tool
+  claude-opus-5-5/<Tool>/                 240 raw reports per tool
+  summaries/                              18 scored outputs + summary_by_cwe.csv
+```
+
+## Reproducing
+
+**1. Clone the upstream benchmark.**
+
 ```bash
 git clone https://github.com/Victor725/PySASTBench.git
 ```
 
-The real-world dataset is distributed separately at
+The real-world dataset, which this study does not use, is distributed separately at
 <https://zenodo.org/records/17936545>.
 
-Pending
+**2. Apply the patches.** Copy each file from `patches/` to its upstream path. The
+mapping is listed at the end of `patches/versions.md`. The DevSkim image also needs
+the CLI 1.0.59 Linux release extracted into its build context; see
+`patches/versions.md`.
+
+**3. Build the tool images.** Docker is required. Images build per tool from
+`SASTTools/<Tool>/Dockerfile`. On Apple Silicon, containers run under
+`--platform linux/amd64`.
+
+**4. Scan and score.** Each arm has its own script pair, and the pair, the corpus
+and the results directory must match:
+
+| Arm | Scripts | Corpus | Results |
+|---|---|---|---|
+| DeepSeek-V3 | `evaluate_baseline.py` / `parse_baseline.py` | upstream `SyntheticDataset/` | upstream `Synthetic_experiment/` |
+| GPT-Sol 6.1 | `evaluate.py` / `parse.py` | `corpus/GPT-Sol-6-1/` | `results/gpt-sol-6-1/` |
+| Claude Opus 5.5 | `evaluate_claude.py` / `parse_claude.py` | `corpus/Claude-Opus-5-5/` | `results/claude-opus-5-5/` |
+
+Paths are set at the top of each script as `Synthetic_dataset_path` and
+`Experiment_Root`; `parse_*.py` additionally sets `Ori_Ground_Truth_path` and
+`GroundTruthPath`. Adjust them to your own checkout before running.
+
+```bash
+cd PySASTBench/scripts/evaluate/Synthetic
+python evaluate_claude.py <Tool>          # scan
+python parse_claude.py   <Tool> evaluate  # score
+```
+
+`<Tool>` is one of `Bandit`, `Bearer`, `Codeql`, `DevSkim`, `Dlint`, `Semgrep`.
 
 ## Key references
 

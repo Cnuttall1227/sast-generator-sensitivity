@@ -18,8 +18,8 @@ log = ""
 
 # TEMP: path updated from the authors' machine to local clone
 Project_Root = "/Users/chacenuttall/Documents/PySASTBench/"
-Synthetic_dataset_path = "/Users/chacenuttall/Documents/Se3994/corpus/Claude-Opus-5-5/"
-Experiment_Root = "/Users/chacenuttall/Documents/Se3994/results/claude-opus-5-5/"
+Synthetic_dataset_path = "/Users/chacenuttall/Documents/Se3994/corpus/GPT-Sol-6-1/"
+Experiment_Root = "/Users/chacenuttall/Documents/Se3994/results/gpt-sol-6-1/"
 
 # TEMP: limit the run to one CWE folder while verifying the pipeline.
 # Set to None to run all six.
