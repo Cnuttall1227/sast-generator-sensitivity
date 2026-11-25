@@ -94,7 +94,7 @@ and the results directory must match:
 | Arm | Scripts | Corpus | Results |
 |---|---|---|---|
 | DeepSeek-V3 | `evaluate_baseline.py` / `parse_baseline.py` | upstream `SyntheticDataset/` | upstream `Synthetic_experiment/` |
-| GPT-Sol 6.1 | `evaluate.py` / `parse.py` | `corpus/GPT-Sol-6-1/` | `results/gpt-sol-6-1/` |
+| GPT-Sol 6.1 | `evaluate_gpt.py` / `parse_gpt.py` | `corpus/GPT-Sol-6-1/` | `results/gpt-sol-6-1/` |
 | Claude Opus 5.5 | `evaluate_claude.py` / `parse_claude.py` | `corpus/Claude-Opus-5-5/` | `results/claude-opus-5-5/` |
 
 Paths are set at the top of each script as `Synthetic_dataset_path` and
